@@ -182,6 +182,9 @@ function D3ok() {
     if( n.description )
       info += '<div class=f><span class=l>Description</span>: <span class=d>' 
            + n.description + '</span></div>';
+	if( n.motivation )
+      info += '<div class=f><span class=l>Motivation for Industry 4.0</span>: <span class=d>' 
+           + n.motivation + '</span></div>';
     if( n.domain )
       info += '<div class=f><span class=l>Domain</span>: <span class=c>' 
            + n.domain + '</span></div>';

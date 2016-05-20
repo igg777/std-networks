@@ -9,7 +9,8 @@
       "domain": "Manufacturing Operation Managment", 
       "description": "MES KPIs", 
       "format": "PDF",
-	  "url" : "https://www.iso.org/obp/ui/#iso:std:iso:22400:-2:ed-1:v1:en"
+	  "url" : "https://www.iso.org/obp/ui/#iso:std:iso:22400:-2:ed-1:v1:en",
+	  "motivation" : "Stations need to describe their operational state and performance parameters towards superior I4.0-Components"
     }, 
     {
 	  "id": 1,
@@ -20,7 +21,8 @@
       "domain": "Functional safety", 
       "description": "Functional safety of electrical/electronic/programmable electronic safety-related systems (E/E/PES) - Functional safety and IEC 61508", 
       "format": "PDF",
-	  "url" : "http://www.iec.ch/functionalsafety/explained/"
+	  "url" : "http://www.iec.ch/functionalsafety/explained/",
+	  "motivation" : "Provides a means to define the functional safety of E/E/PES. It identifies and analyzes the risks associated to the systems. Determines the tolerability of each risk and the necessary risk reduction. Also, implements and validate safety functions for every risk. "
     }, 
     {
 	  "id": 2,
@@ -31,7 +33,32 @@
       "domain": "Functional safety", 
       "description": "Functional safety - Safety instrumented systems for the process industry sector - Framework, definitions, system, hardware and software requirements",
 	  "format" : "PDF", 
-	  "url": "https://webstore.iec.ch/publication/5522"
+	  "url": "https://webstore.iec.ch/publication/5522",
+	  "motivation" : "Defines the functional safety requirements established by IEC 61508 in process industry sector terminology"
+    }, 
+    {
+	  "id": 3,
+      "index": 3, 
+      "score": 7.554875373840332, 
+      "level": 2, 
+	  "label": "OPC UA", 
+      "domain": "Real-time Automation", 
+      "description": "OPC Unified Architecture. Industrial M2M communication protocol for interoperability",
+	  "format" : "XML, CVS, WSDL, BSD", 
+	  "url": "https://en.wikipedia.org/wiki/OPC_Unified_Architecture",
+	  "motivation" : "Communication Layer in RAMI model. Provides the means to integrate different information models, Standards with protocols using SOA. "
+    }, 
+    {
+	  "id": 4,
+      "index": 4, 
+      "score": 7.577875373840332, 
+      "level": 2, 
+	  "label": "AutomationML - IEC 62714", 
+      "domain": "Engineering of automation systems", 
+      "description": "Engineering data exchange format for use in industrial automation systems engineering - Automation markup language - Architecture and general requirements",
+	  "format" : "XML", 
+	  "url": "http://http://automationml.org/",
+	  "motivation" : "Interconnects engineering tools of different disciplines and lifecycle phases, from plant construction over mechanical and electrical design. "
     }
   ], 
   "links": [
@@ -43,6 +70,11 @@
     {
       "source": 1, 
       "target": 2, 
+      "weight": 0.987708330154419
+    },
+    {
+      "source": 3, 
+      "target": 4, 
       "weight": 0.987708330154419
     }
   ]
