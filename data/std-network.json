@@ -1,0 +1,49 @@
+{
+  "nodes": [
+    { 
+      "id": 0,	  
+      "index": 0, 
+      "score": 7.35923957824707, 
+      "level": 3, 
+	  "label": "ISO 22400", 
+      "domain": "Manufacturing Operation Managment", 
+      "description": "MES KPIs", 
+      "format": "PDF",
+	  "url" : "https://www.iso.org/obp/ui/#iso:std:iso:22400:-2:ed-1:v1:en"
+    }, 
+    {
+	  "id": 1,
+	  "index" : 1,
+      "score": 7.167639255523682, 
+      "level": 2, 
+	  "label": "IEC 61508", 
+      "domain": "Functional safety", 
+      "description": "Functional safety of electrical/electronic/programmable electronic safety-related systems (E/E/PES) - Functional safety and IEC 61508", 
+      "format": "PDF",
+	  "url" : "http://www.iec.ch/functionalsafety/explained/"
+    }, 
+    {
+	  "id": 2,
+      "index": 2, 
+      "score": 7.554875373840332, 
+      "level": 2, 
+	  "label": "IEC 61511", 
+      "domain": "Functional safety", 
+      "description": "Functional safety - Safety instrumented systems for the process industry sector - Framework, definitions, system, hardware and software requirements",
+	  "format" : "PDF", 
+	  "url": "https://webstore.iec.ch/publication/5522"
+    }
+  ], 
+  "links": [
+    {
+      "source": 0, 
+      "target": 1, 
+      "weight": 0.9770450592041016
+    }, 
+    {
+      "source": 1, 
+      "target": 2, 
+      "weight": 0.987708330154419
+    }
+  ]
+}
