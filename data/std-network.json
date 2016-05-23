@@ -62,8 +62,34 @@
       "domain": "Engineering of automation systems", 
       "description": "Engineering data exchange format for use in industrial automation systems engineering - Automation markup language - Architecture and general requirements",
 	  "format" : "XML", 
-	  "url": "http://http://automationml.org/",
+	  "url": "http://automationml.org/",
 	  "motivation" : "Interconnects engineering tools of different disciplines and lifecycle phases, from plant construction over mechanical and electrical design. "
+    }, 
+    {
+	  "id": 5,
+      "index": 5, 
+      "score": 4.577875373840332, 
+      "level": 2, 
+	  "label": "IEC 62443", 
+	  "name": "IEC 62443", 
+      "domain": "Security for Industrial Automation and Control Systems", 
+      "description": "Industrial communication networks - Network and system security - Terminology, concepts and models",
+	  "format" : "PDF", 
+	  "url": "https://en.wikipedia.org/wiki/Cyber_security_standards#ISA.2FIEC-62443_.28formerly_ISA-99.29",
+	  "motivation" : "Cyber attacks threat the industry and can cause damage to property and personal injury and affect the image of companies. The Standard allows to define procedures for implementing electronically secure Industrial Automation and Control Systems (IACS). This guidance applies to end-users, system integrators, security practitioners, and control systems manufacturers responsible for manufacturing, designing, implementing, or managing industrial automation and control systems. "
+    }, 
+    {
+	  "id": 6,
+      "index": 6, 
+      "score": 4.577875373840332, 
+      "level": 2, 
+	  "label": "IEC 61987-X", 
+	  "name": "IEC 61987-X", 
+      "domain": "Industrial-process measurement and control", 
+      "description": "Industrial-process measurement and control - Data structures and elements in process equipment catalogues - Measuring equipment with analogue and digital output",
+	  "format" : "PDF", 
+	  "url": "https://webstore.iec.ch/publication/6225",
+	  "motivation" : "Properties and LOPs as an informational representation of the features of measuring equipment. The referenced standards define general principles (e.g. part 11) as well as specific LOPs for specific device types. These international standards also may serve as examples for description of products.. "
     }
   ], 
   "links": [
