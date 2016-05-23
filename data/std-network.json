@@ -1,0 +1,112 @@
+{
+  "nodes": [
+    { 
+      "id": 0,	  
+      "index": 0, 
+      "score": 7.35923957824707, 
+      "level": 3, 
+	  "label": "ISO 22400", 
+	  "name": "ISO 22400", 
+      "domain": "Manufacturing Operation Managment", 
+      "description": "MES KPIs", 
+      "format": "PDF",
+	  "url" : "https://www.iso.org/obp/ui/#iso:std:iso:22400:-2:ed-1:v1:en",
+	  "motivation" : "Stations need to describe their operational state and performance parameters towards superior I4.0-Components"
+    }, 
+    {
+	  "id": 1,
+	  "index" : 1,
+      "score": 7.167639255523682, 
+      "level": 2, 
+	  "label": "IEC 61508", 
+	  "name": "IEC 61508", 
+      "domain": "Functional safety", 
+      "description": "Functional safety of electrical/electronic/programmable electronic safety-related systems (E/E/PES) - Functional safety and IEC 61508", 
+      "format": "PDF",
+	  "url" : "http://www.iec.ch/functionalsafety/explained/",
+	  "motivation" : "Provides a means to define the functional safety of E/E/PES. It identifies and analyzes the risks associated to the systems. Determines the tolerability of each risk and the necessary risk reduction. Also, implements and validate safety functions for every risk. "
+    }, 
+    {
+	  "id": 2,
+      "index": 2, 
+      "score": 7.554875373840332, 
+      "level": 2, 
+	  "label": "IEC 61511", 
+	  "name": "IEC 61511", 
+      "domain": "Functional safety", 
+      "description": "Functional safety - Safety instrumented systems for the process industry sector - Framework, definitions, system, hardware and software requirements",
+	  "format" : "PDF", 
+	  "url": "https://webstore.iec.ch/publication/5522",
+	  "motivation" : "Defines the functional safety requirements established by IEC 61508 in process industry sector terminology"
+    }, 
+    {
+	  "id": 3,
+      "index": 3, 
+      "score": 7.554875373840332, 
+      "level": 2, 
+	  "label": "OPC UA", 
+	  "name": "OPC UA", 
+      "domain": "Real-time Automation", 
+      "description": "OPC Unified Architecture. Industrial M2M communication protocol for interoperability",
+	  "format" : "XML, CVS, WSDL, BSD", 
+	  "url": "https://en.wikipedia.org/wiki/OPC_Unified_Architecture",
+	  "motivation" : "Communication Layer in RAMI model. Provides the means to integrate different information models, Standards with protocols using SOA. "
+    }, 
+    {
+	  "id": 4,
+      "index": 4, 
+      "score": 7.577875373840332, 
+      "level": 2, 
+	  "label": "AML", 
+	  "name": "AutomationML - IEC 62714", 
+      "domain": "Engineering of automation systems", 
+      "description": "Engineering data exchange format for use in industrial automation systems engineering - Automation markup language - Architecture and general requirements",
+	  "format" : "XML", 
+	  "url": "http://automationml.org/",
+	  "motivation" : "Interconnects engineering tools of different disciplines and lifecycle phases, from plant construction over mechanical and electrical design. "
+    }, 
+    {
+	  "id": 5,
+      "index": 5, 
+      "score": 4.577875373840332, 
+      "level": 2, 
+	  "label": "IEC 62443", 
+	  "name": "IEC 62443", 
+      "domain": "Security for Industrial Automation and Control Systems", 
+      "description": "Industrial communication networks - Network and system security - Terminology, concepts and models",
+	  "format" : "PDF", 
+	  "url": "https://en.wikipedia.org/wiki/Cyber_security_standards#ISA.2FIEC-62443_.28formerly_ISA-99.29",
+	  "motivation" : "Cyber attacks threat the industry and can cause damage to property and personal injury and affect the image of companies. The Standard allows to define procedures for implementing electronically secure Industrial Automation and Control Systems (IACS). This guidance applies to end-users, system integrators, security practitioners, and control systems manufacturers responsible for manufacturing, designing, implementing, or managing industrial automation and control systems. "
+    }, 
+    {
+	  "id": 6,
+      "index": 6, 
+      "score": 4.577875373840332, 
+      "level": 2, 
+	  "label": "IEC 61987-X", 
+	  "name": "IEC 61987-X", 
+      "domain": "Industrial-process measurement and control", 
+      "description": "Industrial-process measurement and control - Data structures and elements in process equipment catalogues - Measuring equipment with analogue and digital output",
+	  "format" : "PDF", 
+	  "url": "https://webstore.iec.ch/publication/6225",
+	  "motivation" : "Properties and LOPs as an informational representation of the features of measuring equipment. The referenced standards define general principles (e.g. part 11) as well as specific LOPs for specific device types. These international standards also may serve as examples for description of products.. "
+    }
+  ], 
+  "links": [
+    {
+      "source": 0, 
+      "target": 1, 
+      "weight": 0.9770450592041016
+    }, 
+    {
+      "source": 1, 
+      "target": 2, 
+      "weight": 0.987708330154419
+    },
+    {
+      "source": 3, 
+      "target": 4, 
+      "weight": 0.987708330154419
+    }
+  ]
+}
