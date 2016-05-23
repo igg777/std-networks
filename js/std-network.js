@@ -162,10 +162,10 @@ function D3ok() {
   }
 
 
-  /* Compose the content for the panel with movie details.
+  /* Compose the content for the panel with Standard details.
      Parameters: the node data, and the array containing all nodes
   */
-  function getMovieInfo( n, nodeArray ) {
+  function getStdInfo( n, nodeArray ) {
     console.log( "INFO", n );
     info = '<div id="cover">';
     if( n.cover )
@@ -177,8 +177,8 @@ function D3ok() {
     '<img src="img/target-32.png" class="action" style="top: 280px;" title="center graph on movie" onclick="selectMovie('+n.index+',true);"/>';
 
     info += '<br/></div><div style="clear: both;">'
-    if( n.label )                                                         
-      info += '<div class=f><span class=l>Standard</span>: <span class=g> <a href="' + n.url +'">'+ n.label + '</a></span></div>';
+    if( n.name )                                                         
+      info += '<div class=f><span class=l>Standard</span>: <span class=g> <a href="' + n.url +'">'+ n.name + '</a></span></div>';
     if( n.description )
       info += '<div class=f><span class=l>Description</span>: <span class=d>' 
            + n.description + '</span></div>';
@@ -202,13 +202,7 @@ function D3ok() {
     return info;
   }
 
-  //d3.csv.parseRows("std.csv",function(d) {console.log(d)});
-  //d3.csv("std.csv", function(data){
-  //alert(data[0].Name);
-  //});
-  
   // *************************************************************************
-
   d3.json('data/std-network.json',
     function(data) {
 
@@ -229,8 +223,8 @@ function D3ok() {
 
     // A couple of scales for node radius & edge width
     var node_size = d3.scale.linear()
-      .domain([5,10])	// we know score is in this domain
-      .range([1,16])
+      .domain([15,25])	// we know score is in this domain
+      .range([20,36])
       .clamp(true);
     var edge_width = d3.scale.pow().exponent(8)
       .domain( [minLinkWeight,maxLinkWeight] )
@@ -268,7 +262,7 @@ function D3ok() {
       .attr('r', function(d) { return node_size(d.score || 3); } )
       .attr('pointer-events', 'all')
       //.on("click", function(d) { highlightGraphNode(d,true,this); } )    
-      .on("click", function(d) { showMoviePanel(d); } )
+      .on("click", function(d) { showStdPanel(d); } )
       .on("mouseover", function(d) { highlightGraphNode(d,true,this);  } )
       .on("mouseout",  function(d) { highlightGraphNode(d,false,this); } );
 
@@ -376,17 +370,17 @@ function D3ok() {
       }
       // Now highlight the graph node and show its movie panel
       highlightGraphNode( nodeArray[new_idx], true );
-      showMoviePanel( nodeArray[new_idx] );
+      showStdPanel( nodeArray[new_idx] );
     }
 
 
     /* --------------------------------------------------------------------- */
-    /* Show the movie details panel for a given node
+    /* Show the Standard details panel for a given node
      */
-    function showMoviePanel( node ) {
+    function showStdPanel( node ) {
       // Fill it and display the panel
       movieInfoDiv
-	.html( getMovieInfo(node,nodeArray) )
+	.html( getStdInfo(node,nodeArray) )
 	.attr("class","panel_on");
     }
 
